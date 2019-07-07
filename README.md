@@ -1,6 +1,6 @@
 # 3D DMFNet for Real-time Brain Tumor Segmentation
 
-This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI". You could click the Link to access the [paper](https://arxiv.org/pdf/1904.03355.pdf). The Multimodal Brain Tumor Dataset (2018) could be acquired from [here](https://www.med.upenn.edu/sbia/brats2018.html).
+This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI". You could click the link to access the [paper](https://arxiv.org/pdf/1904.03355.pdf). The Multimodal Brain Tumor Dataset (2018) could be acquired from [here](https://www.med.upenn.edu/sbia/brats2018.html).
 
 
 ## Dilated multi-fiber Network
@@ -31,7 +31,7 @@ python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 
 ### Test
 
-We have provided the trained weights for download (Baidu drive). You could obtain the results as paper reported. Please save the weights in the ./ckpt/dir/here. We will upload the weights to the  google drive soon.
+We have provided the trained weights for download (Baidu drive). Please save the weights in the ./ckpt/dir/here. You could obtain the results as paper reported. 
 
 | Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | PyTorch Model |
 | :-------------|:----------:|:-----------:|:-----------:|:-----------:|:-------------:|
