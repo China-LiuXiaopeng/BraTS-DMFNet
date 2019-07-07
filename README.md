@@ -25,6 +25,7 @@ python preprocess.py
 
 ### Training
 
+Sync bacth normalization is used in our networks, a proper batch size is recommended, i.e., batch_size=8. Multi-gpu training is necessary to obtain a decent result.
 ```
 python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 ```
@@ -60,3 +61,4 @@ If you use our code or model in your work or find it is helpful, please cite the
 
 1. [MFNet](https://github.com/cypw/PyTorch-MFNet)
 2. [BraTS2018-tumor-segmentation](https://github.com/ieee820/BraTS2018-tumor-segmentation)
+3. [Synchronized-BatchNorm-PyTorch](https://github.com/vacancy/Synchronized-BatchNorm-PyTorch)
