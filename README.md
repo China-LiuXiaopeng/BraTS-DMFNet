@@ -17,19 +17,19 @@ This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Bra
 
 Download the BraTS2018 dataset and change the path in ./experiments/PATH.yaml.
 
-###Data preprocess
+### Data preprocess
 
 ```
 python preprocess.py
 ```
 
-###Training
+### Training
 
 ```
 python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 ```
 
-###Test
+### Test
 
 We have provided the trained weights for download (Baidu drive). You could obtain the results as paper reported. Please save the weights in the ./ckpt/dir/here. We will upload the weights to the  google drive soon.
 
@@ -56,7 +56,7 @@ If you use our code/model in your work or find it is helpful, please cite the pa
 }
 ```
 
-##Thanks
+## Thanks
 
 1. [MFNet]("https://github.com/cypw/PyTorch-MFNet")
 2. [BraTS2018-tumor-segmentation]("https://github.com/ieee820/BraTS2018-tumor-segmentation")
