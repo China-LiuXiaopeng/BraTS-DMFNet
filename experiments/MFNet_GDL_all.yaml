@@ -1,0 +1,44 @@
+net: MFNet
+net_params:
+  c: 4
+  n: 32
+  channels: 128
+  groups: 16
+  norm: sync_bn
+  num_classes: 4
+
+criterion: GeneralizedDiceLoss
+
+weight_type: square
+eps: 1e-5
+dataset: BraTSDataset
+seed: 1024
+batch_size: 8
+num_epochs: 500
+save_freq: 50     # save every 50 epochs
+valid_freq: 100   # validate every 10 epochs
+start_iter: 0
+
+opt: Adam
+opt_params:
+  lr: 1e-3
+  weight_decay: 1e-5
+  amsgrad: true
+
+workers: 8
+
+train_list: all.txt
+valid_list: valid.txt
+train_transforms: # for training
+  Compose([
+    RandCrop3D((128,128,128)),
+    RandomRotion(10), 
+    RandomIntensityChange((0.1,0.1)),
+    RandomFlip(0),
+    NumpyType((np.float32, np.int64)),
+    ])
+test_transforms: # for testing
+  Compose([
+    Pad((0, 0, 0, 5, 0)),
+    NumpyType((np.float32, np.int64)),
+    ])
