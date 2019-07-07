@@ -15,11 +15,30 @@ This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Bra
 
 ## Implementation
 
+Download the BraTS2018 dataset and change the path in ./experiments/PATH.yaml.
 
+###Data preprocess
+```
+python preprocess.py
+```
+###Training
+```
+python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
+```
 
-###test
-python test.py --mode=0 --is_out=False --verbose=True --use_TTA=False --postprocess=False --snapshot=False --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
+###Test
+We have provided the trained weights for download (Baidu drive). You could obtain the results as paper reported. Please save the weights in the ./ckpt/dir/here. We will upload the weights to the  google drive soon.
 
+Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | PyTorch Model
+:-------------|:----------------:|:----------------------------------:
+0.75x MFNet   | 1.81 | 79.34 | 90.22 | 84.25 | [here]("https://pan.baidu.com/s/1X5FWuG3Z93hBvXp8Pje73Q") (提取码: zmkm)
+MFNet         | 3.19 | 79.91 | 90.43 | 84.61 | [here]("https://pan.baidu.com/s/1if2rfnjKCgWHvBvumvGWJA") (提取码: j66m)
+DMFNet        | 3.88 | 80.12 | 90.62 | 84.54 | [here]("https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg") (提取码: t8xu)
+
+Then run the testing code:
+```
+python test.py --mode=0 --is_out=True --verbose=True --use_TTA=True --postprocess=True --snapshot=True --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
+```
 ## Citation
 If you use our code/model in your work or find it is helpful, please cite the paper:
 ```
@@ -30,3 +49,6 @@ If you use our code/model in your work or find it is helpful, please cite the pa
   year={2019}
 }
 ```
+##Thanks
+1. [MFNet]("https://github.com/cypw/PyTorch-MFNet")
+2. [BraTS2018-tumor-segmentation]("https://github.com/ieee820/BraTS2018-tumor-segmentation")
