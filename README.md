@@ -46,7 +46,7 @@ python test.py --mode=0 --is_out=True --verbose=True --use_TTA=True --postproces
 
 ## Citation
 
-If you use our code/model in your work or find it is helpful, please cite the paper:
+If you use our code or model in your work or find it is helpful, please cite the paper:
 ```
 @inproceedings{chen2019dmfnet,
   title={3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI},
