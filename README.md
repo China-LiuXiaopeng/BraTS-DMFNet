@@ -1,6 +1,11 @@
 # 3D DMFNet for Real-time BraTS 2018 segmentation
 
-This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI". Link to the [paper]("https://arxiv.org/pdf/1904.03355.pdf")
+This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI". You could click the Link to access the [paper]("https://arxiv.org/pdf/1904.03355.pdf"). The Multimodal Brain Tumor Dataset (2018) could be acquired from [here]("https://www.med.upenn.edu/sbia/brats2018.html").
+
+
+## Dilated multi-fiber Network
+
+![Image text](https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/Architecture.jpg)
 
 ## Requirements
 * python 3.6
@@ -8,8 +13,9 @@ This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Bra
 * nibabel
 * pickle 
 
-
 ## Implementation
+
+
 
 ###test
 python test.py --mode=0 --is_out=False --verbose=True --use_TTA=False --postprocess=False --snapshot=False --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
