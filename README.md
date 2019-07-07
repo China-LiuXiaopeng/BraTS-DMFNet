@@ -3,7 +3,7 @@
 This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI". You could click the link to access the [paper](https://arxiv.org/pdf/1904.03355.pdf). The Multimodal Brain Tumor Dataset (2018) could be acquired from [here](https://www.med.upenn.edu/sbia/brats2018.html).
 
 
-## Dilated multi-fiber Network
+## Dilated multi-fiber network
 
 ![Image text](https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/Architecture.jpg)
 
