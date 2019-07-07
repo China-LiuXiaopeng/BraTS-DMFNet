@@ -31,7 +31,7 @@ python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 
 ### Test
 
-We have provided the trained weights for download (Baidu drive). Please save the weights in the ./ckpt/dir/here. You could obtain the results as paper reported. 
+We have provided the trained weights for download (Baidu drive). Please save the weights in the ./ckpt/dir/here. You could obtain the results as paper reported. We place the submission resutls in ./submission results/here.
 
 | Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | PyTorch Model |
 | :-------------|:----------:|:-----------:|:-----------:|:-----------:|:-------------:|
