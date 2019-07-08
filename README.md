@@ -39,15 +39,15 @@ python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 
 ### Test
 
-We have provided the trained weights for download (Baidu drive). Please save the weights in the ./ckpt/dir/here. You could obtain the results as paper reported. We place the submission resutls in ./submission results/here.
+**Table. Dice scores for the enhancing tumor, whole tumor and tumor core respevtively** 
+| Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | 
+| :-------------|:----------:|:-----------:|:-----------:|:-----------:|
+| 0.75x MFNet   | 1.81 | 79.34 | 90.22 | 84.25 | 
+| MFNet         | 3.19 | 79.91 | 90.43 | 84.61 | 
+| DMFNet        | 3.88 | 80.12 | 90.62 | 84.54 |
 
-| Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | PyTorch Model |
-| :-------------|:----------:|:-----------:|:-----------:|:-----------:|:-------------:|
-| 0.75x MFNet   | 1.81 | 79.34 | 90.22 | 84.25 | [here](https://pan.baidu.com/s/1X5FWuG3Z93hBvXp8Pje73Q) (提取码: zmkm) |
-| MFNet         | 3.19 | 79.91 | 90.43 | 84.61 | [here]() (提取码: j66m) |
-| DMFNet        | 3.88 | 80.12 | 90.62 | 84.54 | [here](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg) (提取码: t8xu) |
+We have provided the trained weights for download (Baidu drive). Please download the [weight](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg) (提取码: t8xu) in the ./ckpt/DMFNet_GDL_all/here, then run the testing code, you could obtaion hte results as paper reported.
 
-Then run the testing code:
 ```
 python test.py --mode=0 --is_out=True --verbose=True --use_TTA=True --postprocess=True --snapshot=True --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
 ```
