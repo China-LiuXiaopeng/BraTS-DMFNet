@@ -23,6 +23,12 @@ Download the BraTS2018 dataset and change the path in ./experiments/PATH.yaml.
 python preprocess.py
 ```
 
+(Optional) You could split the training set into k-fold for the **cross-validation** experiment by means of the sklearn lib.
+
+```
+python split.py
+```
+
 ### Training
 
 Sync bacth normalization is used in our networks, a proper batch size is recommended, i.e., batch_size=8. Multi-gpu training is necessary to obtain a decent result.
