@@ -57,7 +57,7 @@ If you use our code or model in your work or find it is helpful, please cite the
 }
 ```
 
-## Thanks
+## Acknowledge
 
 1. [MFNet](https://github.com/cypw/PyTorch-MFNet)
 2. [BraTS2018-tumor-segmentation](https://github.com/ieee820/BraTS2018-tumor-segmentation)
