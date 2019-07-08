@@ -44,7 +44,7 @@ We have provided the trained weights for download (Baidu drive). Please save the
 | Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | PyTorch Model |
 | :-------------|:----------:|:-----------:|:-----------:|:-----------:|:-------------:|
 | 0.75x MFNet   | 1.81 | 79.34 | 90.22 | 84.25 | [here](https://pan.baidu.com/s/1X5FWuG3Z93hBvXp8Pje73Q) (提取码: zmkm) |
-| MFNet         | 3.19 | 79.91 | 90.43 | 84.61 | [here](https://pan.baidu.com/s/1if2rfnjKCgWHvBvumvGWJA) (提取码: j66m) |
+| MFNet         | 3.19 | 79.91 | 90.43 | 84.61 | [here]() (提取码: j66m) |
 | DMFNet        | 3.88 | 80.12 | 90.62 | 84.54 | [here](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg) (提取码: t8xu) |
 
 Then run the testing code:
