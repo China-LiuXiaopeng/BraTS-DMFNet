@@ -18,6 +18,7 @@ This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Bra
 Download the BraTS2018 dataset and change the path in ./experiments/PATH.yaml.
 
 ### Data preprocess
+Convert the .nii files as .pkl files. Normalization with zero-mean and unit variance . 
 
 ```
 python preprocess.py
