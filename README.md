@@ -55,6 +55,7 @@ You could download the trained [weights](https://pan.baidu.com/s/1dRyo9ZvisZvAwO
 ```
 python test.py --mode=0 --is_out=True --verbose=True --use_TTA=True --postprocess=True --snapshot=True --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
 ```
+Then make a submission to the online evaluation server.
 
 ## Citation
 
