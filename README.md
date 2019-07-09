@@ -24,7 +24,7 @@ Convert the .nii files as .pkl files. Normalization with zero-mean and unit vari
 python preprocess.py
 ```
 
-(Optional) You could split the training set into k-fold for the **cross-validation** experiment by means of the sklearn lib.
+(Optional) Split the training set into k-fold for the **cross-validation** experiment.
 
 ```
 python split.py
