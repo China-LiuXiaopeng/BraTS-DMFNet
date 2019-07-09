@@ -41,11 +41,11 @@ python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 
 **Table. Dice scores for the enhancing tumor, whole tumor and tumor core respevtively** 
 
-| Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | 
-| :-------------|:----------:|:-----------:|:-----------:|:-----------:|
-| 0.75x MFNet   | 1.81 | 79.34 | 90.22 | 84.25 | 
-| MFNet         | 3.19 | 79.91 | 90.43 | 84.61 | 
-| DMFNet        | 3.88 | 80.12 | 90.62 | 84.54 |
+| Model         | Params (M) | FLOPs (G) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | 
+| :-------------|:----------:|:----------:|:-----------:|:-----------:|:-----------:|
+| 0.75x MFNet   | 1.81 | 13.36 | 79.34 | 90.22 | 84.25 | 
+| MFNet         | 3.19 | 20.61 | 79.91 | 90.43 | 84.61 | 
+| DMFNet        | 3.88 | 27.04 | 80.12 | 90.62 | 84.54 |
 
 We have provided the trained weights for download (Baidu drive). Please download the [weight](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg) (提取码: t8xu) in the ./ckpt/DMFNet_GDL_all/here, then run the testing code, you could obtaion hte results as paper reported.
 
