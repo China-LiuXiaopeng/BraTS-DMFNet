@@ -32,7 +32,8 @@ python split.py
 
 ### Training
 
-Sync bacth normalization is used in our networks, a proper batch size is recommended, i.e., batch_size=8. Multi-gpu training is necessary to obtain a decent result.
+Sync bacth normalization is used so that a proper batch size is important to obtain a decent performance. Multiply gpus training with batch_size=8 is recommended. The training time will take <10 hours.
+
 ```
 python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 ```
