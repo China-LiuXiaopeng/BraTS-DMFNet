@@ -47,7 +47,10 @@ python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 | MFNet         | 3.19 | 20.61 | 79.91 | 90.43 | 84.61 | 
 | DMFNet        | 3.88 | 27.04 | 80.12 | 90.62 | 84.54 |
 
-We have provided the trained weights for download (Baidu drive). Please download the [weight](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg) (提取码: t8xu) in the ./ckpt/DMFNet_GDL_all/here, then run the testing code, you could obtaion hte results as paper reported.
+Where ET: the enhancing tumor, WT: the whole tumor, TC: the tumor core.
+
+You could download the trained [weights](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg) (提取码: t8xu) from Baidu drive, put it in the 
+./ckpt/DMFNet_GDL_all/here. You could obtain the resutls as paper reported by running the following code:
 
 ```
 python test.py --mode=0 --is_out=True --verbose=True --use_TTA=True --postprocess=True --snapshot=True --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
