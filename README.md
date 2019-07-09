@@ -32,7 +32,7 @@ python split.py
 
 ### Training
 
-Sync bacth normalization is used so that a proper batch size is important to obtain a decent performance. Multiply gpus training with batch_size=8 is recommended. The training time will take <10 hours.
+Sync bacth normalization is used so that a proper batch size is important to obtain a decent performance. Multiply gpus training with batch_size=8 is recommended. The total training time take less than 10 hours in gtxforce 1080Ti.
 
 ```
 python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
