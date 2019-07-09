@@ -40,6 +40,7 @@ python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 ### Test
 
 **Table. Dice scores for the enhancing tumor, whole tumor and tumor core respevtively** 
+
 | Model         | Params (M) | Dice_ET (%) | Dice_WT (%) | Dice_TC (%) | 
 | :-------------|:----------:|:-----------:|:-----------:|:-----------:|
 | 0.75x MFNet   | 1.81 | 79.34 | 90.22 | 84.25 | 
