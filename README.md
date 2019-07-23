@@ -2,7 +2,11 @@
 
 This repository is the work of "_3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI_" based on **pytorch** implementation. You could click the link to access the [paper](https://arxiv.org/pdf/1904.03355.pdf). The multimodal brain tumor dataset (BraTS 2018) could be acquired from [here](https://www.med.upenn.edu/sbia/brats2018.html).
 
-<div align=center>![Affiliation](https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/affiliation.png)
+
+
+<img src="https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/affiliation.png" width = "400" height = "260" alt="affiliation" 
+align=center>
+
 
 ## Dilated multi-fiber network
 
