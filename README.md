@@ -5,7 +5,7 @@ This repository is the work of "_3D Dilated Multi-Fiber Network for Real-time Br
 
 <center>
 <img src="https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/affiliation.png" 
-     width = "800" height = "360" alt="affiliation" 
+     width = "600" height = "250" alt="affiliation" 
 align=center>
 </center>
 
