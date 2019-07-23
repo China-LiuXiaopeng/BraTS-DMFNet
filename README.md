@@ -16,7 +16,7 @@ This repository is the work of "_3D Dilated Multi-Fiber Network for Real-time Br
 
  <div  align="center">  
 <img src="https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/Architecture.jpg"
-     align=center>
+     align=center/>
 </div>
 
  <center>Figure. Architecture of 3D DMFNet</center>
