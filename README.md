@@ -8,11 +8,12 @@ This repository is the work of "_3D Dilated Multi-Fiber Network for Real-time Br
      width = "600"
      height = "275"
       align=center>
-</div>
-
-<center>
+ <center>
 Figure 1. Affiliation.
 </center>
+</div>
+
+
 
 ## Dilated multi-fiber network
 
@@ -20,11 +21,12 @@ Figure 1. Affiliation.
  <div  align="center">  
 <img src="https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/Architecture.jpg"
      align=center>
+ <center>
+Figure 2. Architecture of 3D DMFNet.
+</center>
 </div>
 
-<center>
-Figure 2. Illustration of 3D DMFNet.
-</center>
+
 
 ## Requirements
 * python 3.6
