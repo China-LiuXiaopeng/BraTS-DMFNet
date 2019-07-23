@@ -1,7 +1,8 @@
 # 3D DMFNet for Real-time Brain Tumor Segmentation
 
-This repository is the work of "3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI" based on **pytorch** implementation. You could click the link to access the [paper](https://arxiv.org/pdf/1904.03355.pdf). The multimodal brain tumor dataset (BraTS 2018) could be acquired from [here](https://www.med.upenn.edu/sbia/brats2018.html).
+This repository is the work of "\underline{3D Dilated Multi-Fiber Network for Real-time Brain Tumor Segmentation in MRI}" based on **pytorch** implementation. You could click the link to access the [paper](https://arxiv.org/pdf/1904.03355.pdf). The multimodal brain tumor dataset (BraTS 2018) could be acquired from [here](https://www.med.upenn.edu/sbia/brats2018.html).
 
+![Image text](https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/affiliation.png)
 
 ## Dilated multi-fiber network
 
@@ -54,8 +55,7 @@ python train_all.py --gpu=0,1,2,3 --cfg=DMFNet_GDL_all --batch_size=8
 
 Where ET: the enhancing tumor, WT: the whole tumor, TC: the tumor core.
 
-You could download the trained [weights](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg) (提取码: t8xu) from Baidu drive, put it in the 
-./ckpt/DMFNet_GDL_all/here. You could obtain the resutls as paper reported by running the following code:
+You could download the trained **DMFnet (pytorch)** from [Google drive](https://drive.google.com/open?id=17C-rbNQZtBoCH1Dgu3wYJQm8N0_DbdxH) or [Baidu dirve](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg)(password for download: t8xu). Put the weight in the dir './ckpt/DMFNet_GDL_all/here'. You could obtain the resutls as paper reported by running the following code:
 
 ```
 python test.py --mode=0 --is_out=True --verbose=True --use_TTA=True --postprocess=True --snapshot=True --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
