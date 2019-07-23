@@ -14,12 +14,12 @@ This repository is the work of "_3D Dilated Multi-Fiber Network for Real-time Br
 ## Dilated multi-fiber network
 
 
- <div  align="center">  
-<img src="https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/Architecture.jpg"
+<div  align="center">  
+ <img src="https://github.com/China-LiuXiaopeng/BraTS-DMFNet/blob/master/fig/Architecture.jpg"
      align=center/>
 </div>
 
- <center>Figure. Architecture of 3D DMFNet</center>
+ <center>Architecture of 3D DMFNet</center>
 
 
 ## Requirements
