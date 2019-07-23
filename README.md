@@ -11,10 +11,7 @@ This repository is the work of "_3D Dilated Multi-Fiber Network for Real-time Br
 
 </div>
 
-<center>
-Figure 1. Affiliation.
-</center>
-
+<center>Figure 1. Affiliation.</center>
 
 ## Dilated multi-fiber network
 
@@ -24,9 +21,9 @@ Figure 1. Affiliation.
      align=center>
 </div>
 
- <center>
-Figure 2. Architecture of 3D DMFNet.
-</center>
+ <center>Figure 2. Architecture of 3D DMFNet.</center>
+
+
 
 
 
