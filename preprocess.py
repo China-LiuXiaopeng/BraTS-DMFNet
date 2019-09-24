@@ -70,8 +70,13 @@ def process_f32(path, has_label=True):
     for k in range(4):
         x = images[..., k] #
         y = x[mask] #
-        lower = np.percentile(y, 0.2) # 算分位数
-        upper = np.percentile(y, 99.8)
+        
+        #lower = np.percentile(y, 0.2) # 算分位数
+        #upper = np.percentile(y, 99.8)
+        # try this one
+        lower = np.percentile(y, 2.5) # 算分位数
+        upper = np.percentile(y, 97.5)
+        
         x[mask & (x < lower)] = lower
         x[mask & (x > upper)] = upper
 
