@@ -63,7 +63,7 @@ Where ET: the enhancing tumor, WT: the whole tumor, TC: the tumor core.
 You could download the trained **DMFnet (pytorch)** from [Google drive](https://drive.google.com/open?id=17C-rbNQZtBoCH1Dgu3wYJQm8N0_DbdxH) or [Baidu dirve](https://pan.baidu.com/s/1dRyo9ZvisZvAwO4TVen2Pg)(password for download: t8xu). Put the weight in the dir './ckpt/DMFNet_GDL_all/here'. You could obtain the resutls as paper reported by running the following code:
 
 ```
-python test.py --mode=0 --is_out=True --verbose=True --use_TTA=True --postprocess=True --snapshot=True --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
+python test.py --mode=1 --is_out=True --verbose=True --use_TTA=True --postprocess=True --snapshot=True --restore=model_last.pth --cfg=DMFNet_GDL_all --gpu=0
 ```
 Then make a submission to the online evaluation server.
 
