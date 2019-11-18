@@ -16,19 +16,16 @@ modalities = ('flair', 't1ce', 't1', 't2')
 train_set = {
         'root': '/data2/liuxiaopeng/Data/BraTS2018/Train',
         'flist': 'all.txt',
-        'has_label': True
         }
 
 valid_set = {
         'root': '/data2/liuxiaopeng/Data/BraTS2018/Valid',
         'flist': 'valid.txt',
-        'has_label': False
         }
 
 test_set = {
         'root': '/data2/liuxiaopeng/Data/BraTS2018/Test',
         'flist': 'test.txt',
-        'has_label': False
         }
 
 def nib_load(file_name):
@@ -58,7 +55,7 @@ def savepkl(data,path):
         pickle.dump(data, f)
 
 
-def process_f32(path, has_label=True):
+def process_f32(path):
     """ Set all Voxels that are outside of the brain mask to 0"""
     label = np.array(nib_load(path + 'seg.nii.gz'), dtype='uint8', order='C')
     images = np.stack([
@@ -88,18 +85,14 @@ def process_f32(path, has_label=True):
     print("saving:",output)
     savepkl(data=(images, label),path=output)
 
-    if not has_label:
-        return
-
 def doit(dset):
-    root, has_label = dset['root'], dset['has_label']
+    root, has_label = dset['root']
     file_list = os.path.join(root, dset['flist'])
     subjects = open(file_list).read().splitlines()
     names = [sub.split('/')[-1] for sub in subjects]
     paths = [os.path.join(root, sub, name + '_') for sub, name in zip(subjects, names)]
     for path in paths:
-        process_f32(path, has_label)
-
+        process_f32(path)
 
 doit(train_set)
 doit(valid_set)
