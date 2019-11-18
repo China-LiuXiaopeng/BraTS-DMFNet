@@ -32,7 +32,7 @@ If you make inference using the "model_last.pth" ckpt, the following details may
 
     -3.4921865 5.863213
 
-  Pay more attention to the fractional part, it should have no deviation.
+  Pay more attention to the fractional part, it should have no deviation (Don't use 64-bit floating way to normalize the data)
 
 (3)Finally, check the model output of "model_last.pth" file in the BraTS 2018 validation set. Normally, the number of the pixel per category is consistent to followings.
 
