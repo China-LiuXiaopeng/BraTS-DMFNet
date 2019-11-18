@@ -1,6 +1,6 @@
 Please follow the instructions to reproduce the experimental results from the provided "model_last.pth" file, which are 80.12%, 90.62% and 84.54% for Dice_ET, Dice_WT and Dice_TC respectively.
 
-If you make inference using the "model_last.pth" ckpt, the following details may helpful to you when reproducing the results.
+If you make inference using the "model_last.pth" ckpt, the following details may helpful to you to reproduce the results.
 
 (1) In "preprocess.py", find the code and make sure they are using the number of 0.2 and 99.8.
 
@@ -8,7 +8,7 @@ If you make inference using the "model_last.pth" ckpt, the following details may
         upper = np.percentile(y, 99.8)
 
 
-(2) Check the data normalization! The normalization with float32 or float64 have an obvious impact on it, make a difference in the final prediction.	I select one sample of the pkl,  path = "./HGG/Brats18_2013_2_1/Brats18_2013_2_1_data_f32.pkl. You could write a script to print the data. For example,
+(2) Check the data normalization! The normalization with float32 or float64 have a significantly impact on it, make a difference in the final prediction. I select one sample of the pkl,  path = "./HGG/Brats18_2013_2_1/Brats18_2013_2_1_data_f32.pkl. You could write a script to print the data. For example,
     
         def debug():
           path = "./HGG/Brats18_2013_2_1/Brats18_2013_2_1_data_f32.pkl"
@@ -17,7 +17,7 @@ If you make inference using the "model_last.pth" ckpt, the following details may
           print(data) 
           print(np.min(data), np.max(data))
 
-  It should print like this:
+  It will print like this:
 
     [[[[-2.8575273 -2.4078138 -3.4921865 -2.6610713]
      [-2.8575273 -2.4078138 -3.4921865 -2.6610713]
