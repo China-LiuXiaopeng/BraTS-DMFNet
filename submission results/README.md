@@ -1,6 +1,6 @@
 Please follow the instructions to reproduce the experimental results from the provided "model_last.pth" file, which are 80.12%, 90.62% and 84.54% for Dice_ET, Dice_WT and Dice_TC respectively.
 
-If you make inference using the "model_last.pth" ckpt, the following details may helpful to you when reproduce the results.
+If you make inference using the "model_last.pth" ckpt, the following details may helpful to you when reproducing the results.
 
 (1) In "preprocess.py", find the code and make sure they are using the number of 0.2 and 99.8.
 
