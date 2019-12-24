@@ -13,7 +13,7 @@ import numpy as np
 
 
 class BraTSDataset(Dataset):
-    def __init__(self, list_file, root='', for_train=False,transforms='', return_target=True):
+    def __init__(self, list_file, root='', for_train=False,transforms=''):
         paths, names = [], []
         with open(list_file) as f:
             for line in f:
@@ -25,30 +25,16 @@ class BraTSDataset(Dataset):
 
         self.names = names
         self.paths = paths
-        self.return_target = return_target
-
         self.transforms = eval(transforms or 'Identity()')
 
     def __getitem__(self, index):
         path = self.paths[index]
-
         x, y = pkload(path + 'data_f32.pkl')
         # print(x.shape, y.shape)#(240, 240, 155, 4) (240, 240, 155)
         # transforms work with nhwtc
         x, y = x[None, ...], y[None, ...]
         # print(x.shape, y.shape)#(1, 240, 240, 155, 4) (1, 240, 240, 155)
-        done = False
-        if self.return_target:
-            while not done:
-                # print(x.shape, y.shape)#(1, 240, 240, 155, 4) (1, 240, 240, 155)
-                a, b = self.transforms([x, y])
-                # print(a.shape,b.shape)#(1, 128, 128, 128, 4) (1, 128, 128, 128)
-                if b.sum() > 0:
-                    done = True
-                    x, y = a, b
-
-        else:
-            x = self.transforms(x)
+        x,y = self.transforms([x, y])
 
         x = np.ascontiguousarray(x.transpose(0, 4, 1, 2, 3))# [Bsize,channels,Height,Width,Depth]
         y = np.ascontiguousarray(y)
